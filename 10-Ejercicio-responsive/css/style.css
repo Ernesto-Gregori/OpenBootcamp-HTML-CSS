@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.barra {
+    background-color: burlywood;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.principal {
+    background-color: cadetblue;
+    flex-grow: 4;
+}
+
+@media (max-width: 640px) {
+    .contenedor {
+        flex-direction: column-reverse;
+    }
+
+    .barra {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .barra a {
+        padding-left: 1rem;
+    }
+
+    .principal {
+        height: 2rem;
+    }
+}
